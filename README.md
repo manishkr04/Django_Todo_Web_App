@@ -7,9 +7,23 @@ To get this repository, run the following command inside your git enabled termin
 ```bash
 $ git clone https://github.com/shreys7/django-todo.git
 ```
+
+Second thing you can do is create a virtual Environment if you want to run the code in specific version of Python. 
+For that you can follow some of the command to listed below:
+ # virtualenv -p python3.7 env 
+ # source env/bin/activate
+
+
+
 You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
 
+# pip install django
+
+
 Once you have downloaded django, go to the cloned repo directory and run the following command
+
+# cd django-todo
+
 
 ```bash
 $ python manage.py makemigrations
@@ -36,3 +50,15 @@ $ python manage.py runserver
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
 Cheers and Happy Coding :)
+
+
+A requirements.txt file in Django lists project dependencies, ensuring consistent installation across environments.
+
+Command to create:
+# pip freeze > requirement.txt
+
+To install all the dependencies listed in the file in one go, use the following command:
+
+# py
+
+
